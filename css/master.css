@@ -4,12 +4,49 @@
     --accent-color: #0d6efd;
     --text-color: #000;
     --content-background-color: #fff;
+    --menu-icon: url('../assets/menu-light.png');
 }
 
 .darkmode {
     --background-color: #222;
     --text-color: #fff;
     --content-background-color: #000;
+    --menu-icon: url('../assets/menu-dark.png');
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0.3rem 1rem;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    background-color: var(--primary-color);
+    color: white;
+    letter-spacing: 0.75px;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.navbar-toggler-icon {
+    background-image: var(--menu-icon);
+}
+
+.navbar-toggler-icon:hover {
+    background-image: url('../assets/menu-hover.png');
+}
+
+.navbar-toggler {
+    border-width: 1px;
+    border-color: #7f7f7f;
 }
 
 .text, .content-background {
