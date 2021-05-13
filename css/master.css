@@ -1,0 +1,40 @@
+:root {
+    --background-color: #eee;
+    --primary-color: #f00;
+    --accent-color: #0d6efd;
+    --text-color: #000;
+    --content-background-color: #fff;
+}
+
+.darkmode {
+    --background-color: #222;
+    --text-color: #fff;
+    --content-background-color: #000;
+}
+
+.text, .content-background {
+    display: inline-block;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.text {
+    margin: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: var(--text-color);
+}
+
+.content-background {
+    margin: 20px;
+    background-color: var(--content-background-color);
+}
+
+button {
+    border: none;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: var(--content-background-color);
+}
