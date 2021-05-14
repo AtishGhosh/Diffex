@@ -3,11 +3,79 @@
     --primary-color: #f00;
     --accent-color: #0d6efd;
     --text-color: #000;
+    --inversed-text-color: #fff;
     --content-background-color: #fff;
 }
 
 .darkmode {
     --background-color: #222;
     --text-color: #fff;
+    --inversed-text-color: #000;
     --content-background-color: #000;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2.75rem;
+}
+
+.main-content {
+    padding-top: 4.75rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--inversed-text-color);
+    padding-left: var(--bs-gutter-x,1.5rem);
+    padding-right: var(--bs-gutter-x,1.5rem);
+    padding-bottom: var(--bs-gutter-x,1.5rem);
+    color: white;
+}
+
+.pages-content {
+    padding-left: var(--bs-gutter-x,1rem);
+    padding-right: var(--bs-gutter-x,1rem);
+    background-image: url('../assets/cutting-tools.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    text-align: center;
+    background-color: var(--content-background-color);
+    color: var(--text-color);
+}
+
+.btn {
+    width: 6rem;
+    font-size: large;
+}
+
+img {
+    width: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Theme Button */
+
+.text {
+    margin: 20px;
+    height: 70px;
+    width: 70px;
+    background-color: var(--text-color);
+}
+
+.content-background {
+    margin: 20px;
+    background-color: var(--content-background-color);
+}
+
+button {
+    border: none;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: var(--content-background-color);
 }

@@ -5,42 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diffex</title>
-    <!--Bootstrap-->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <!--Stylesheets-->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="">DIFFEX</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Clients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </nav>
-  <div class="container"></div>
+  <div class="main-content">
+    <h1>Welcome</h1>
+    <h3>to Different Experience Enterprises</h3>
+  </div>
+  <div class="pages-content">
+    <div class="row pt-4 ms-1 me-1">
+      <div class="card col-md mb-4 ms-2 me-2">
+        <div class="card-body">
+          <img src="assets/products.png" alt="img-products">
+          <p class="card-text">We offer top-line products that use the lastest generation cutting edge technologies to give you a competitive edge.</p>
+          <a href="" class="btn btn-primary">Products</a>
+        </div>
+      </div>
+      <div class="card col-md mb-4 ms-2 me-2">
+        <div class="card-body">
+          <img src="assets/clients.png" alt="img-clients">
+          <p class="card-text">Customer partnerships are vital to our quality service. Here is a list of brands we have provided our services to.</p>
+          <a href="" class="btn btn-primary">Clients</a>
+        </div>
+      </div>
+      <div class="card col-md mb-4 ms-2 me-2">
+        <div class="card-body">
+          <img src="assets/contact.png" alt="img-contact">
+          <p class="card-text">Your plant efficiency is just a phone call away. Click the button below to learn more on how to get in touch with us.</p>
+          <a href="" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+      <div class="card col-md mb-4 ms-2 me-2">
+        <div class="card-body">
+          <img src="assets/about.png" alt="img-about">
+          <p class="card-text">We pride ourselves on delivering best products for our customers. Know more about the team behind our operations.</p>
+          <a href="" class="btn btn-primary">About</a>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="content-background">
         <div class="text">
             <button id="dark-mode-toggle" class="dark-mode-toggle">

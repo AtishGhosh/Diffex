@@ -3,6 +3,7 @@
     --primary-color: #f00;
     --accent-color: #0d6efd;
     --text-color: #000;
+    --inversed-text-color: #fff;
     --content-background-color: #fff;
     --menu-icon: url('../assets/menu-light.png');
 }
@@ -10,6 +11,7 @@
 .darkmode {
     --background-color: #222;
     --text-color: #fff;
+    --inversed-text-color: #000;
     --content-background-color: #000;
     --menu-icon: url('../assets/menu-dark.png');
 }
@@ -19,9 +21,8 @@
 }
 
 .navbar-brand {
-    padding: 0.3rem 1rem;
+    padding: 0.25rem 1rem;
     font-family: serif;
-    font-weight: bold;
     font-size: 1.8rem;
     background-color: var(--primary-color);
     color: white;
@@ -49,29 +50,21 @@
     border-color: #7f7f7f;
 }
 
+.container-fluid {
+    padding-left: var(--bs-gutter-x,.75rem);
+    padding-right: var(--bs-gutter-x,.75rem);
+}
+
+.container {
+    margin: 0;
+    margin: auto var(--bs-gutter-x,.75rem);
+    font-family: 'Montserrat', sans-serif;
+}
+
 .text, .content-background {
     display: inline-block;
 }
 
 body {
     background-color: var(--background-color);
-}
-
-.text {
-    margin: 20px;
-    height: 70px;
-    width: 70px;
-    background-color: var(--text-color);
-}
-
-.content-background {
-    margin: 20px;
-    background-color: var(--content-background-color);
-}
-
-button {
-    border: none;
-    padding: 10px 10px;
-    background-color: transparent;
-    color: var(--content-background-color);
 }
