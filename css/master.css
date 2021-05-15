@@ -5,6 +5,7 @@
     --text-color: #000;
     --inversed-text-color: #fff;
     --content-background-color: #fff;
+    --bottombar-color: #ddd;
     --menu-icon: url('../assets/menu-light.png');
 }
 
@@ -13,6 +14,7 @@
     --text-color: #fff;
     --inversed-text-color: #000;
     --content-background-color: #000;
+    --bottombar-color: #333;
     --menu-icon: url('../assets/menu-dark.png');
 }
 
@@ -67,4 +69,24 @@
 
 body {
     background-color: var(--background-color);
+}
+
+.bottombar-content {
+    padding: var(--bs-gutter-x,1rem);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: flex-start;
+    background-color: var(--bottombar-color);
+}
+
+.bottombar-info {
+    font-size: small;
+    text-align: end;
+    padding-left: 5rem;
+}
+
+.bottombar-content {
+    color: var(--text-color);
 }
