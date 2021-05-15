@@ -70,10 +70,26 @@ img {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
 }
 
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
 
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        padding-top: 4rem;
+    }
+
+    .pages-content {
+        padding-left: 0;
+    }
+}
 
 /* Theme Button */
 
