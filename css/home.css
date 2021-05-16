@@ -73,6 +73,22 @@ body {
     margin-top: 0;
 }
 
+.carousel-img-1, .carousel-img-2, .carousel-img-3 {
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-img-1 {
+    background-image: url('../assets/office.jpeg');
+}
+.carousel-img-2 {
+    background-image: url('../assets/factory.jpg');
+}
+.carousel-img-3 {
+    background-image: url('../assets/placeholder-1.jpg');
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 3rem;
