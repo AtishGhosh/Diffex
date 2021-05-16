@@ -1,5 +1,5 @@
 :root {
-    --background-color: #eee;
+    --background-color: #f4f4f4;
     --primary-color: #f00;
     --accent-color: #0d6efd;
     --text-color: #000;
@@ -8,7 +8,7 @@
 }
 
 .darkmode {
-    --background-color: #222;
+    --background-color: #141414;
     --text-color: #fff;
     --inversed-text-color: #000;
     --content-background-color: #000;

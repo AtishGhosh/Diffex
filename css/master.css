@@ -1,29 +1,29 @@
 :root {
-    --background-color: #eee;
+    --background-color: #f4f4f4;
     --primary-color: #f00;
     --accent-color: #0d6efd;
     --text-color: #000;
     --inversed-text-color: #fff;
-    --navbar-color: rgba(238, 238, 238, 0.9);
+    --navbar-color: rgba(244, 244, 244, 0.9);
     --content-background-color: #fff;
-    --bottombar-color: #ddd;
+    --bottombar-color: #eee;
     --menu-icon: url('../assets/menu-light.png');
 }
 
 .darkmode {
-    --background-color: #222;
+    --background-color: #141414;
     --text-color: #fff;
     --inversed-text-color: #000;
     --content-background-color: #000;
-    --navbar-color: rgba(34, 34, 34, 0.9);
-    --bottombar-color: #333;
+    --navbar-color: rgba(20, 20, 20, 0.9);
+    --bottombar-color: #222;
     --menu-icon: url('../assets/menu-dark.png');
 }
 
 .navbar {
     padding: 0;
     background-color: var(--navbar-color);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
 
 .navbar-brand {
@@ -105,6 +105,10 @@ body {
 
 .bottombar-content-narrow {
     display: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
