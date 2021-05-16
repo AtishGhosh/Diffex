@@ -20,6 +20,28 @@
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="">DIFFEX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products/">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clients/">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-contact" href="contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="main-content">
@@ -74,13 +96,13 @@
         </div>
         <div class="carousel-item">
           <a href="about/index.html#Future"><div class="carousel-img-2 d-block w-100"></div></a>
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5 style="font-weight: bold; font-size: 2rem;">Upcoming Factory</h5>
           </div>
         </div>
         <div class="carousel-item">
           <div class="carousel-img-3 d-block w-100"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5 style="font-weight: bold; font-size: 2rem;">Example Text</h5>
           </div>
         </div>
@@ -117,14 +139,14 @@
       <a href="about/" style="text-decoration: none;">Learn more</a> about the Diffex team. <a href="contact/" style="text-decoration: none;">Contact us</a> for any suggestions, queries, or to place your order.
     </div>
   </div>
-    <!-- <div class="content-background">
+    <div class="content-background">
         <div class="text">
             <button id="dark-mode-toggle" class="dark-mode-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
                   </svg>
         </div>
-    </div> -->
+    </div>
   <script src="js/darkmode.js">
     const systemDarkModeResult = window.matchMedia("(prefers-color-scheme: dark)");
     console.log(systemDarkModeResult.matches);

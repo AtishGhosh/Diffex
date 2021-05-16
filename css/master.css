@@ -56,6 +56,10 @@
     border-color: #7f7f7f;
 }
 
+.nav-link-contact {
+    margin-bottom: 0;
+}
+
 .container-fluid {
     padding-left: var(--bs-gutter-x,.75rem);
     padding-right: var(--bs-gutter-x,.75rem);
@@ -104,6 +108,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .nav-link {
+        text-align: end;
+        margin-right: 1rem;
+    }
+
+    .nav-link-contact {
+        margin-bottom: 1rem;
+    }
+
     .bottombar-content {
         display: none;
     }

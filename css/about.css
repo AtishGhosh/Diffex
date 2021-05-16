@@ -37,22 +37,15 @@ h1 {
     color: var(--text-color);
 }
 
-.business-text {
-    display: grid;
-    grid-auto-flow: row;
-    align-items: flex-start;
-    justify-items: flex-start;
-}
-
 .office {
-    height: 24rem;
+    height: 20rem;
     background-image: url('../assets/office.jpeg');
     background-position: center;
     background-size: cover;
 }
 
 .factory {
-    height: 24rem;
+    height: 20rem;
     background-image: url('../assets/factory.jpg');
     background-position: center;
     background-size: cover;
