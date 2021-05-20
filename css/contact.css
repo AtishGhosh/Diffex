@@ -14,7 +14,49 @@
     --content-background-color: #000;
 }
 
+.content {
+    padding-left: var(--bs-gutter-x,.75rem);
+    padding-right: var(--bs-gutter-x,.75rem);
+}
+
+.slate-left, .slate-right {
+    width: 49%;
+    display: inline-block;
+}
+
+.slate-left {
+    margin-right: var(--bs-gutter-x,.375rem);
+}
+
+.slate-right {
+    margin-left: var(--bs-gutter-x,.375rem);
+}
+
 .card {
     background-color: var(--content-background-color);
     color: var(--text-color);
+    border-width: 1px;
+    border-color: white;
+    margin-bottom: var(--bs-gutter-x,.75rem);
+}
+
+.card-title {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    display: inline-block;
+}
+
+.btn-call {
+    display: inline-block;
+    text-align: end;
+}
+
+@media only screen and (max-width: 768px) {
+    .slate-left, .slate-right {
+        display: block;
+        width: auto;
+    }
 }
