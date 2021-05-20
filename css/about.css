@@ -27,14 +27,34 @@ h1 {
     margin-bottom: 2rem;
 }
 
+h5 {
+    margin-bottom: 0;
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.card {
+.business-card {
     background-color: var(--content-background-color);
     color: var(--text-color);
+    border-width: 1px;
+    border-color: white;
+    margin: .375rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.business-card-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.card-img {
+    width: 25%;
 }
 
 .office {
