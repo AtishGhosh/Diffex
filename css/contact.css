@@ -40,18 +40,25 @@
     margin-bottom: var(--bs-gutter-x,.75rem);
 }
 
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
 .card-title {
     display: inline-block;
     font-size: 1.5rem;
 }
 
-.card-body {
+.card-text {
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-call {
     display: inline-block;
-    text-align: end;
 }
 
 @media only screen and (max-width: 768px) {
