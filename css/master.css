@@ -1,10 +1,10 @@
 :root {
-    --background-color: #f4f4f4;
+    --background-color: #f0f0f0;
     --primary-color: #f00;
     --accent-color: #0d6efd;
     --text-color: #000;
     --inversed-text-color: #fff;
-    --navbar-color: rgba(244, 244, 244, 0.9);
+    --navbar-color: rgba(240, 240, 240, 0.9);
     --content-background-color: #fff;
     --bottombar-color: #eee;
     --menu-icon: url('../assets/menu-light.png');

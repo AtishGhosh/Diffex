@@ -1,5 +1,5 @@
 :root {
-    --background-color: #f4f4f4;
+    --background-color: #f0f0f0;
     --primary-color: #f00;
     --accent-color: #0d6efd;
     --text-color: #000;
@@ -20,11 +20,21 @@
 }
 
 .content-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
     margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.card {
+    border-width: 1px;
+    border-color: white;
+    background-color: var(--content-background-color);
 }
 
 h5 {
@@ -40,7 +50,7 @@ h5 {
     background-color: var(--content-background-color);
     color: var(--text-color);
     border-width: 1px;
-    border-color: white;
+    border-color: red;
     margin: .375rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
@@ -50,7 +60,7 @@ h5 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .card-img {
