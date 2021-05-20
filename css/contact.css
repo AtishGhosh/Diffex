@@ -19,17 +19,19 @@
     padding-right: var(--bs-gutter-x,.75rem);
 }
 
-.slate-left, .slate-right {
-    width: 49%;
-    display: inline-block;
+.slate {
+    display: flex;
+    justify-content: space-between;
+    justify-items: stretch;
+    flex-wrap: wrap;
 }
 
 .slate-left {
-    margin-right: var(--bs-gutter-x,.375rem);
+    width: 49.5%;
 }
 
 .slate-right {
-    margin-left: var(--bs-gutter-x,.375rem);
+    width: 49.5%;
 }
 
 .card {
@@ -40,14 +42,14 @@
     margin-bottom: var(--bs-gutter-x,.75rem);
 }
 
-.card-body {
+.card-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.card-title {
+.card-title {   
     font-size: 2rem;
 }
 
@@ -64,9 +66,14 @@
     text-align: end;
 }
 
+.req {
+    font-weight: normal;
+    color: #f00;
+}
+
 @media only screen and (max-width: 768px) {
     .slate-left, .slate-right {
         display: block;
-        width: auto;
+        width: 100%;
     }
 }
