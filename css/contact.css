@@ -48,8 +48,7 @@
 }
 
 .card-title {
-    display: inline-block;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .card-text {
@@ -58,6 +57,11 @@
 
 .btn-call {
     display: inline-block;
+}
+
+.open-hours {
+    display: inline-block;
+    text-align: end;
 }
 
 @media only screen and (max-width: 768px) {

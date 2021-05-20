@@ -33,6 +33,7 @@
     background-color: var(--primary-color);
     color: white;
     letter-spacing: 0.75px;
+    transition: 0.25s ease;
 }
 
 .navbar-brand:hover {

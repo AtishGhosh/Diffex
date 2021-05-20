@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/master.css">
     <link rel="stylesheet" href="../css/contact.css">
@@ -19,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../">DIFFEX</a>
+          <a class="navbar-brand btn-danger" href="../">DIFFEX</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -49,25 +50,31 @@
         <div class="slate-left">
           <div class="card">
             <div class="card-body">
-              <div class="card-text"><span style="font-size: 1.5rem;">Phone</span>&emsp;+91-33-4061-0271</div>
+              <div class="card-text"><span class="card-title">Phone</span> &emsp; <span style="font-weight: 600;">+91-33-4061-0271</span></div>
               <div class="btn-call"><a href="tel:+913340610271" target="_blank" class="btn btn-primary">Give us a call</a></div>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <div class="card-text"><span style="font-size: 1.5rem;">E-mail</span>&emsp;diffexho@yahoo.co.in</div>
+              <div class="card-text"><span class="card-title">E-mail</span> &emsp; <span style="font-weight: 600;">diffexho@yahoo.co.in</span></div>
               <div class="btn-call"><a href="tel:+913340610271" target="_blank" class="btn btn-primary">Send an mail</a></div>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <div class="card-text"><span style="font-size: 1.5rem;">Office</span>&emsp;B1, Royale Apartment, 920, Madurdaha, Kolkata</div>
+              <div class="card-text"><span class="card-title">Office</span> &emsp; <span style="font-weight: 600;">B1, Royale Apartment, 920, Madurdaha, Kolkata</span></div>
               <div class="btn-call"><a href="https://g.page/diffex" target="_blank" class="btn btn-primary">Map Location</a></div>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <div class="card-text"><span style="font-size: 1.5rem;">Factory</span>&emsp;Kharagpur Industrial Estate, Nimpura, Kharagpur</div>
+              <div class="card-text card-title">Open Hours</div>
+              <div class="open-hours"><span style="font-weight: 600;">MONDAY&emsp;9 am - 6 pm<br>TUESDAY&emsp;9 am - 6 pm<br>WEDNESDAY&emsp;9 am - 6 pm<br>THURSDAY&emsp;9 am - 6 pm<br>FRIDAY&emsp;9 am - 6 pm<br>SATURDAY&emsp;9 am - 2 pm</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text"><span class="card-title">Factory</span> &emsp; <span style="font-weight: 600;">Kharagpur Industrial Estate, Nimpura, Kharagpur</span></div>
               <div class="btn-call"><a href="https://goo.gl/maps/fjzk6uqSeWyNTBLL7" target="_blank" class="btn btn-primary">Map Location</a></div>
             </div>
           </div>
@@ -85,7 +92,7 @@
     <div class="bottombar-info">
       Designed and built by the Diffex team. Open-source project code hosted on <a href="https://github.com/AtishGhosh/Diffex" target="_blank">GitHub</a>. Currently version v2.0.1<br>
       <a href="about/">Learn more</a> about the Diffex team. <a href="contact/">Contact us</a> for any suggestions, queries, or to place your order.<br>
-      <a href="">Change Appearance</a> of Website. Learn about our <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a>.
+      <a href="" id="dark-mode-toggle" class="dark-mode-toggle">Change Appearance</a> of Website. Learn about our <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a>.
     </div>
   </div>
   <div class="bottombar-content-narrow">
@@ -98,17 +105,9 @@
     <div class="bottombar-info-narrow">
       Designed and built by the Diffex team. Open-source project code hosted on <a href="https://github.com/AtishGhosh/Diffex" target="_blank">GitHub</a>. Currently version v2.0.1<br>
       <a href="about/">Learn more</a> about the Diffex team. <a href="contact/">Contact us</a> for any suggestions, queries, or to place your order.<br>
-      <a href="">Change Appearance</a> of Website. Learn about our <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a>.
+      <a href="" id="dark-mode-toggle" class="dark-mode-toggle">Change Appearance</a> of Website. Learn about our <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a>.
     </div>
   </div>
-    <div class="content-background">
-        <div class="text">
-            <button id="dark-mode-toggle" class="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-                  </svg>
-        </div>
-    </div>
   <script src="../js/darkmode.js">
     const systemDarkModeResult = window.matchMedia("(prefers-color-scheme: dark)");
     console.log(systemDarkModeResult.matches);
