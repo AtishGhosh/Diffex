@@ -6,7 +6,7 @@
     --inversed-text-color: #fff;
     --navbar-color: rgba(240, 240, 240, 0.9);
     --content-background-color: #fff;
-    --bottombar-color: #eee;
+    --bottombar-color: #ddd;
     --menu-icon: url('../assets/menu-light.png');
 }
 
@@ -60,6 +60,10 @@
 
 .nav-link-contact {
     margin-bottom: 0;
+}
+
+.current-page {
+    color: red;
 }
 
 .container-fluid {
