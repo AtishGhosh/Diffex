@@ -69,8 +69,12 @@
 }
 
 .req {
-    color: #f00;
+    color: red;
     padding: 0;
+}
+
+.req:hover {
+    color: red;
 }
 
 .form-control {

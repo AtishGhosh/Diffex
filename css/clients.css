@@ -1,0 +1,44 @@
+:root {
+    --background-color: #f0f0f0;
+    --primary-color: #f00;
+    --accent-color: #0d6efd;
+    --text-color: #000;
+    --inversed-text-color: #fff;
+    --content-background-color: #fff;
+    --form-color: #fff;
+}
+
+.darkmode {
+    --background-color: #141414;
+    --text-color: #fff;
+    --inversed-text-color: #000;
+    --content-background-color: #000;
+    --form-color: #ccc;
+}
+
+.content {
+    padding-left: var(--bs-gutter-x,.75rem);
+    padding-right: var(--bs-gutter-x,.75rem);
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.showcase {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--content-background-color);
+    color: var(--text-color);
+    border-width: 1px;
+    border-color: white;
+    margin-bottom: var(--bs-gutter-x,.75rem);
+}
+
+.client-img {
+    margin: 1.5rem 0;
+}
