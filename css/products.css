@@ -33,11 +33,22 @@ h1 {
     margin-bottom: var(--bs-gutter-x,.75rem);
 }
 
-.company-logo {
-    width: 25%;
+.supplier {
+    width: 30%;
 }
 
 .product {
-    border-width: 1px;
-    border-color: #ccc;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .supplier {
+        width: 100%;
+    }
 }
