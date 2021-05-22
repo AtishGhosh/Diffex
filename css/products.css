@@ -32,3 +32,12 @@ h1 {
     border-color: white;
     margin-bottom: var(--bs-gutter-x,.75rem);
 }
+
+.company-logo {
+    width: 25%;
+}
+
+.product {
+    border-width: 1px;
+    border-color: #ccc;
+}
