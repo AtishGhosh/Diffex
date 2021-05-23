@@ -6,6 +6,7 @@
     --inversed-text-color: #fff;
     --content-background-color: #fff;
     --form-color: #fff;
+    --border: none;
 }
 
 .darkmode {
@@ -14,6 +15,7 @@
     --inversed-text-color: #000;
     --content-background-color: #000;
     --form-color: #ccc;
+    --border: 1px solid white;
 }
 
 .content {
@@ -28,19 +30,27 @@ h1 {
 .card {
     background-color: var(--content-background-color);
     color: var(--text-color);
-    border-width: 1px;
-    border-color: white;
+    border: var(--border);
     margin-bottom: var(--bs-gutter-x,.75rem);
+}
+
+.card-body {
+    padding-top: 0.5rem;
 }
 
 .supplier {
     width: 30%;
+    margin: 2rem 0;
+}
+
+.row {
+    justify-content: space-between;
 }
 
 .product {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 h5 {
