@@ -36,6 +36,7 @@ h1 {
 
 .card-body {
     padding-top: 0.5rem;
+    padding-right: 0.25rem;
 }
 
 .supplier {
@@ -51,10 +52,6 @@ h1 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-}
-
-h5 {
-    font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
