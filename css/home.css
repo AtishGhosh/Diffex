@@ -1,7 +1,23 @@
-:root {
+.default {
     --background-color: #f4f4f4;
     --primary-color: #f00;
     --accent-color: #0d6efd;
+    --text-color: #000;
+    --inversed-text-color: #fff;
+    --content-background-color: #fff;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color: #111;
+        --text-color: #fff;
+        --inversed-text-color: #000;
+        --content-background-color: #000;
+    }
+}
+
+.lightmode {
+    --background-color: #f4f4f4;
     --text-color: #000;
     --inversed-text-color: #fff;
     --content-background-color: #fff;
@@ -24,11 +40,11 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url('../assets/menu-dark.png');
+    background-image: url('/assets/menu-dark.png');
 }
 
 .navbar-toggler-icon:hover {
-    background-image: url('../assets/menu-light.png');
+    background-image: url('/assets/menu-light.png');
 }
 
 .navbar-toggler {
@@ -60,7 +76,7 @@ h3 {
 .pages-content {
     padding-left: var(--bs-gutter-x,1rem);
     padding-right: var(--bs-gutter-x,1rem);
-    background-image: url('../assets/cutting-tools.jpg');
+    background-image: url('/assets/cutting-tools.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,13 +113,13 @@ body {
 }
 
 .carousel-img-1 {
-    background-image: url('../assets/office.jpeg');
+    background-image: url('/assets/office.jpeg');
 }
 .carousel-img-2 {
-    background-image: url('../assets/factory.jpg');
+    background-image: url('/assets/factory.jpg');
 }
 .carousel-img-3 {
-    background-image: url('../assets/placeholder.jpg');
+    background-image: url('/assets/placeholder.jpg');
 }
 
 @media only screen and (max-width: 768px) {
