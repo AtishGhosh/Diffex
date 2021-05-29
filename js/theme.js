@@ -11,6 +11,13 @@ const enableLightMode = () => {
     document.body.classList.remove('default');
     // 2. Update themeMode in localStorage 
     localStorage.setItem('themeMode', 'light');
+    // 3. Change btn classes
+    document.getElementById("auto-mode-btn").classList.remove('btn-primary');
+    document.getElementById("auto-mode-btn").classList.add('btn-outline-primary');
+    document.getElementById("light-mode-btn").classList.remove('btn-outline-primary');
+    document.getElementById("light-mode-btn").classList.add('btn-primary');
+    document.getElementById("dark-mode-btn").classList.remove('btn-primary');
+    document.getElementById("dark-mode-btn").classList.add('btn-outline-primary');
 }
 
 const enableDarkMode = () => {
@@ -20,6 +27,13 @@ const enableDarkMode = () => {
     document.body.classList.remove('default');
     // 2. Update darkMode in localStorage
     localStorage.setItem('themeMode', 'dark');
+    // 3. Change btn classes
+    document.getElementById("auto-mode-btn").classList.remove('btn-primary');
+    document.getElementById("auto-mode-btn").classList.add('btn-outline-primary');
+    document.getElementById("light-mode-btn").classList.remove('btn-primary');
+    document.getElementById("light-mode-btn").classList.add('btn-outline-primary');
+    document.getElementById("dark-mode-btn").classList.remove('btn-outline-primary');
+    document.getElementById("dark-mode-btn").classList.add('btn-primary');
 }
 
 const enableAutoMode = () => {
@@ -29,6 +43,13 @@ const enableAutoMode = () => {
     document.body.classList.remove('darkmode');
     // 2. Update themeMode in localStorage 
     localStorage.setItem('themeMode', null);
+    // 3. Change btn classes
+    document.getElementById("auto-mode-btn").classList.remove('btn-outline-primary');
+    document.getElementById("auto-mode-btn").classList.add('btn-primary');
+    document.getElementById("light-mode-btn").classList.remove('btn-primary');
+    document.getElementById("light-mode-btn").classList.add('btn-outline-primary');
+    document.getElementById("dark-mode-btn").classList.remove('btn-primary');
+    document.getElementById("dark-mode-btn").classList.add('btn-outline-primary');
 }
 
 if (themeMode === 'light') {
