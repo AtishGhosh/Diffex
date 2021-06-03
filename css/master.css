@@ -11,7 +11,7 @@
     --modal-color: rgba(255, 255, 255, 0.9);
     --content-background-color: #fff;
     --bottombar-color: #ddd;
-    --menu-icon: url('/assets/menu-light.png');
+    --menu-icon: url('/assets/menu/menu-light.png');
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -23,7 +23,7 @@
         --navbar-color: rgba(20, 20, 20, 0.9);
         --modal-color: rgba(0, 0, 0, 0.8);
         --bottombar-color: #222;
-        --menu-icon: url('/assets/menu-dark.png');
+        --menu-icon: url('/assets/menu/menu-dark.png');
     }
 }
 
@@ -35,7 +35,7 @@
     --navbar-color: rgba(20, 20, 20, 0.9);
     --modal-color: rgba(0, 0, 0, 0.8);
     --bottombar-color: #222;
-    --menu-icon: url('/assets/menu-dark.png');
+    --menu-icon: url('/assets/menu/menu-dark.png');
 }
 
 .navbar {
@@ -69,7 +69,7 @@
 }
 
 .navbar-toggler-icon:hover {
-    background-image: url('../assets/menu-hover.png');
+    background-image: url('../assets/menu/menu-hover.png');
 }
 
 .navbar-toggler {

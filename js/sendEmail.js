@@ -24,6 +24,7 @@ function sendEmail() {
     if (
         ((name === '') || (name == null)) ||
         ((email === '') || (email == null)) ||
+        ((subject === '') || (subject == null)) ||
         ((message === '') || (message == null))
     ) {
         return;

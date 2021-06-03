@@ -81,16 +81,15 @@ h5 {
     width: 25%;
 }
 
-.office {
-    height: 20rem;
-    background-image: url('../assets/office.jpeg');
+.factory {
+    height: 22rem;
+    background-image: url('/assets/home/machines.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.factory {
-    height: 20rem;
-    background-image: url('../assets/factory.jpg');
-    background-position: center;
-    background-size: cover;
+@media only screen and (max-width: 768px) {
+    .factory {
+        background-image: url('/assets/home/machines-narrow.jpg');
+    }
 }

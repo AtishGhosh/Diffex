@@ -40,11 +40,11 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url('/assets/menu-dark.png');
+    background-image: url('/assets/menu/menu-dark.png');
 }
 
 .navbar-toggler-icon:hover {
-    background-image: url('/assets/menu-light.png');
+    background-image: url('/assets/menu/menu-light.png');
 }
 
 .navbar-toggler {
@@ -76,7 +76,7 @@ h1 {
 .pages-content {
     padding-left: var(--bs-gutter-x,1rem);
     padding-right: var(--bs-gutter-x,1rem);
-    background-image: url('/assets/cutting-tools.jpg');
+    background-image: url('/assets/home/cutting-tools.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,13 +113,13 @@ body {
 }
 
 .carousel-img-1 {
-    background-image: url('/assets/office.jpeg');
+    background-image: url('/assets/home/office.jpeg');
 }
 .carousel-img-2 {
-    background-image: url('/assets/factory.jpg');
+    background-image: url('/assets/home/factory.jpg');
 }
 .carousel-img-3 {
-    background-image: url('/assets/placeholder.jpg');
+    background-image: url('/assets/home/machines.jpg');
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,6 +137,10 @@ body {
 
     .pages-content {
         padding-left: 0;
+    }
+
+    .carousel-img-3 {
+        background-image: url('/assets/home/machines-narrow.jpg');
     }
 }
 
