@@ -1,4 +1,4 @@
-.default {
+.default, .lightmode {
     --background-color: #f0f0f0;
     --text-color: #000;
     --inversed-text-color: #fff;
@@ -18,38 +18,48 @@
     }
 }
 
-.lightmode {
-    --background-color: #f0f0f0;
-    --text-color: #000;
-    --inversed-text-color: #fff;
-    --content-background-color: #fff;
-    --form-color: #fff;
-    --border: none;
-}
-
 .darkmode {
     --background-color: #141414;
-    --text-color: #fff;
-    --inversed-text-color: #000;
-    --content-background-color: #000;
-    --form-color: #ccc;
-    --border: 1px solid white;
+        --text-color: #fff;
+        --inversed-text-color: #000;
+        --content-background-color: #000;
+        --form-color: #ccc;
+        --border: 1px solid white;
 }
 
-.content-container {
-    padding-left: var(--bs-gutter-x,.75rem);
-    padding-right: var(--bs-gutter-x,.75rem);
-}
+/* body */
+
 
 h1 {
     margin-bottom: 2rem;
 }
 
+hr {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.brand-img {
+    text-align: center;
+}
+
+.dropdown-btn {
+    text-align: center;
+}
+
+.col-row {
+    display: flex;
+    align-items: center;
+}
+
 .card {
     background-color: var(--content-background-color);
-    color: var(--text-color);
     border: var(--border);
-    margin-bottom: var(--bs-gutter-x,.75rem);
 }
 
 .card-body {
@@ -75,5 +85,9 @@ h1 {
 @media only screen and (max-width: 768px) {
     .supplier {
         width: 100%;
+    }
+
+    .brand-img {
+        margin-bottom: 1rem;
     }
 }
