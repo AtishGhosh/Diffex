@@ -12,6 +12,11 @@
     width: 10rem;
 }
 
+.btn-danger {
+    background-color: red;
+    border-color: red;
+}
+
 @media only screen and (prefers-color-scheme: dark) {
     .content {
         width: 100%;
