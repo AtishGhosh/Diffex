@@ -1,6 +1,7 @@
-# Diffex
+<h1>Diffex</h1>
 Website for Different Experience Enterprises (https://diffex.in/).
-### Features
+<hr>
+<h3>Features</h3>
 • Native Dark Mode Integration<br>
 • EmailJS Integration for Contact Us form<br>
 • Responsive UI<br>
