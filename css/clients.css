@@ -1,42 +1,42 @@
 .default {
-    --background-color: #f0f0f0;
-    --text-color: #000;
-    --inversed-text-color: #fff;
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
     --content-background-color: #fff;
-    --form-color: #fff;
+    --form-color              : #fff;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .default {
-        --background-color: #141414;
-        --text-color: #fff;
-        --inversed-text-color: #000;
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
         --content-background-color: #000;
-        --form-color: #ccc;
-        --card-filter: invert(100%);
+        --form-color              : #ccc;
+        --card-filter             : invert(100%);
     }
 }
 
 .lightmode {
-    --background-color: #f0f0f0;
-    --text-color: #000;
-    --inversed-text-color: #fff;
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
     --content-background-color: #fff;
-    --form-color: #fff;
+    --form-color              : #fff;
 }
 
 .darkmode {
-    --background-color: #141414;
-    --text-color: #fff;
-    --inversed-text-color: #000;
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
     --content-background-color: #000;
-    --form-color: #ccc;
-    --card-filter: invert(100%);
+    --form-color              : #ccc;
+    --card-filter             : invert(100%);
 }
 
 .content {
-    padding-left: var(--bs-gutter-x,.75rem);
-    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left : var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
 }
 
 h1 {
@@ -44,21 +44,21 @@ h1 {
 }
 
 .showcase {
-    text-align: center;
+    text-align     : center;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
 .card {
     background-color: var(--content-background-color);
-    color: var(--text-color);
-    border-width: 1px;
-    border-color: white;
-    margin-bottom: var(--bs-gutter-x,.75rem);
+    color           : var(--text-color);
+    border-width    : 1px;
+    border-color    : white;
+    margin-bottom   : var(--bs-gutter-x, .75rem);
 }
 
 .row {
-    filter: var(--card-filter);
+    filter        : var(--card-filter);
     -webkit-filter: var(--card-filter);
 }
 

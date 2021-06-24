@@ -1,59 +1,60 @@
 :root {
     --primary-color: #f00;
-    --accent-color: #0d6efd;
+    --accent-color : #0d6efd;
 }
 
-.default, .lightmode {
-    --background-color: #f0f0f0;
-    --text-color: #000;
-    --inversed-text-color: #fff;
-    --navbar-color: rgba(240, 240, 240, 0.9);
-    --modal-color: rgba(255, 255, 255, 0.9);
+.default,
+.lightmode {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --navbar-color            : rgba(240, 240, 240, 0.9);
+    --modal-color             : rgba(255, 255, 255, 0.9);
     --content-background-color: #fff;
-    --bottombar-color: #ddd;
-    --menu-icon: url('/assets/menu/menu-light.png');
+    --bottombar-color         : #ddd;
+    --menu-icon               : url('/assets/menu/menu-light.png');
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .default {
-        --background-color: #141414;
-        --text-color: #fff;
-        --inversed-text-color: #000;
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
         --content-background-color: #000;
-        --navbar-color: rgba(20, 20, 20, 0.9);
-        --modal-color: rgba(0, 0, 0, 0.8);
-        --bottombar-color: #222;
-        --menu-icon: url('/assets/menu/menu-dark.png');
+        --navbar-color            : rgba(20, 20, 20, 0.9);
+        --modal-color             : rgba(0, 0, 0, 0.8);
+        --bottombar-color         : #222;
+        --menu-icon               : url('/assets/menu/menu-dark.png');
     }
 }
 
 .darkmode {
-    --background-color: #141414;
-    --text-color: #fff;
-    --inversed-text-color: #000;
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
     --content-background-color: #000;
-    --navbar-color: rgba(20, 20, 20, 0.9);
-    --modal-color: rgba(0, 0, 0, 0.8);
-    --bottombar-color: #222;
-    --menu-icon: url('/assets/menu/menu-dark.png');
+    --navbar-color            : rgba(20, 20, 20, 0.9);
+    --modal-color             : rgba(0, 0, 0, 0.8);
+    --bottombar-color         : #222;
+    --menu-icon               : url('/assets/menu/menu-dark.png');
 }
 
 .navbar {
-    padding: 0;
-    background-color: var(--navbar-color);
-    backdrop-filter: blur(4px);
+    padding                : 0;
+    background-color       : var(--navbar-color);
+    backdrop-filter        : blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
 
 .navbar-brand {
-    padding: 0.25rem 1rem;
-    font-family: serif;
-    font-size: 1.8rem;
+    padding         : 0.25rem 1rem;
+    font-family     : serif;
+    font-size       : 1.8rem;
     background-color: var(--primary-color);
-    color: white;
-    letter-spacing: 0.75px;
-    transition: 0.25s ease;
-    margin-right: 0;
+    color           : white;
+    letter-spacing  : 0.75px;
+    transition      : 0.25s ease;
+    margin-right    : 0;
 }
 
 .navbar-brand:hover {
@@ -86,25 +87,26 @@
 }
 
 .container-fluid {
-    padding-left: var(--bs-gutter-x,.75rem);
-    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left : var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
 }
 
 .container {
-    margin: 0;
-    margin: auto var(--bs-gutter-x,.75rem);
+    margin     : 0;
+    margin     : auto var(--bs-gutter-x, .75rem);
     font-family: 'Montserrat', sans-serif;
 }
 
-.text, .content-background {
+.text,
+.content-background {
     display: inline-block;
 }
 
 body {
-    margin-top: 4rem;
+    margin-top      : 4rem;
     background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Montserrat', sans-serif;
+    color           : var(--text-color);
+    font-family     : 'Montserrat', sans-serif;
 }
 
 a {
@@ -112,30 +114,30 @@ a {
 }
 
 .bottombar-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    display         : flex;
+    align-items     : flex-start;
+    justify-content : space-between;
     background-color: var(--bottombar-color);
-    padding: 0.8rem;
+    padding         : 0.8rem;
 }
 
 .bottombar-brand {
-    display: flex;
-    align-self: start;
+    display        : flex;
+    align-self     : start;
     justify-content: flex-start;
-    white-space: nowrap;
+    white-space    : nowrap;
 }
 
 .bottombar-info {
-    width: 50%;
+    width     : 50%;
     text-align: end;
-    font-size: 0.85rem;
+    font-size : 0.85rem;
 }
 
 .modal-content {
     background-color: var(--modal-color);
-    border-width: 1px;
-    border-color: white;
+    border-width    : 1px;
+    border-color    : white;
 }
 
 .close-modal {
@@ -148,29 +150,29 @@ a {
 
 @media only screen and (max-width: 992px) {
     .bottombar-content {
-        display: block;
+        display         : block;
         background-color: var(--bottombar-color);
-        padding: 0.8rem;
+        padding         : 0.8rem;
     }
-    
+
     .bottombar-brand {
-        display: flex;
-        align-self: start;
+        display        : flex;
+        align-self     : start;
         justify-content: flex-start;
-        white-space: normal;
-        width: 100%;
-        margin-bottom: 0.5rem;
+        white-space    : normal;
+        width          : 100%;
+        margin-bottom  : 0.5rem;
     }
-    
+
     .bottombar-info {
-        width: 100%;
+        width     : 100%;
         text-align: end;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .nav-link {
-        text-align: end;
+        text-align  : end;
         margin-right: 1rem;
     }
 
@@ -179,22 +181,22 @@ a {
     }
 
     .bottombar-content {
-        display: block;
+        display         : block;
         background-color: var(--bottombar-color);
-        padding: 0.8rem;
+        padding         : 0.8rem;
     }
-    
+
     .bottombar-brand {
-        display: block;
-        align-self: start;
+        display        : block;
+        align-self     : start;
         justify-content: flex-start;
-        white-space: normal;
-        width: 100%;
-        margin-bottom: 0.5rem;
+        white-space    : normal;
+        width          : 100%;
+        margin-bottom  : 0.5rem;
     }
-    
+
     .bottombar-info {
-        width: 100%;
+        width     : 100%;
         text-align: end;
     }
 }

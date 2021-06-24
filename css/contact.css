@@ -1,47 +1,47 @@
 .default {
-    --background-color: #f0f0f0;
-    --text-color: #000;
-    --inversed-text-color: #fff;
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
     --content-background-color: #fff;
-    --form-color: #fff;
+    --form-color              : #fff;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .default {
-        --background-color: #141414;
-        --text-color: #fff;
-        --inversed-text-color: #000;
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
         --content-background-color: #000;
-        --form-color: #ccc;
+        --form-color              : #ccc;
     }
 }
 
 .lightmode {
-    --background-color: #f0f0f0;
-    --text-color: #000;
-    --inversed-text-color: #fff;
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
     --content-background-color: #fff;
-    --form-color: #fff;
+    --form-color              : #fff;
 }
 
 .darkmode {
-    --background-color: #141414;
-    --text-color: #fff;
-    --inversed-text-color: #000;
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
     --content-background-color: #000;
-    --form-color: #ccc;
+    --form-color              : #ccc;
 }
 
 .content {
-    padding-left: var(--bs-gutter-x,.75rem);
-    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left : var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
 }
 
 .slate {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    justify-items: stretch;
-    flex-wrap: wrap;
+    justify-items  : stretch;
+    flex-wrap      : wrap;
 }
 
 .slate-left {
@@ -54,20 +54,20 @@
 
 .card {
     background-color: var(--content-background-color);
-    color: var(--text-color);
-    border-width: 1px;
-    border-color: white;
-    margin-bottom: var(--bs-gutter-x,.75rem);
+    color           : var(--text-color);
+    border-width    : 1px;
+    border-color    : white;
+    margin-bottom   : var(--bs-gutter-x, .75rem);
 }
 
 .card-content {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-wrap      : wrap;
+    gap            : 8px;
 }
 
-.card-title {   
+.card-title {
     font-size: 2rem;
 }
 
@@ -80,12 +80,12 @@
 }
 
 .open-hours {
-    display: inline-block;
+    display   : inline-block;
     text-align: end;
 }
 
 .req {
-    color: red;
+    color  : red;
     padding: 0;
 }
 
@@ -98,8 +98,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .slate-left, .slate-right {
+
+    .slate-left,
+    .slate-right {
         display: block;
-        width: 100%;
+        width  : 100%;
     }
 }

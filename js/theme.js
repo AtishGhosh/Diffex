@@ -3,13 +3,13 @@ const lightModeBtn = document.querySelector('#light-mode-btn');
 const darkModeBtn = document.querySelector('#dark-mode-btn');
 
 let themeMode = localStorage.getItem('themeMode');
-  
+
 const enableLightMode = () => {
     // 1. Add the class to the body
     document.body.classList.add('lightmode');
     document.body.classList.remove('darkmode');
     document.body.classList.remove('default');
-    // 2. Update themeMode in localStorage 
+    // 2. Update themeMode in localStorage
     localStorage.setItem('themeMode', 'light');
     // 3. Change btn classes
     document.getElementById("auto-mode-btn").classList.remove('btn-primary');
@@ -63,7 +63,7 @@ if (themeMode === 'light') {
 lightModeBtn.addEventListener('click', () => {
     enableLightMode();
 });
-  
+
 darkModeBtn.addEventListener('click', () => {
     enableDarkMode();
 });

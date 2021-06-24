@@ -1,38 +1,38 @@
 .default {
-    --background-color: #f4f4f4;
-    --primary-color: #f00;
-    --accent-color: #0d6efd;
-    --text-color: #000;
-    --inversed-text-color: #fff;
+    --background-color        : #f4f4f4;
+    --primary-color           : #f00;
+    --accent-color            : #0d6efd;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
     --content-background-color: #fff;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .default {
-        --background-color: #111;
-        --text-color: #fff;
-        --inversed-text-color: #000;
+        --background-color        : #111;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
         --content-background-color: #000;
     }
 }
 
 .lightmode {
-    --background-color: #f4f4f4;
-    --text-color: #000;
-    --inversed-text-color: #fff;
+    --background-color        : #f4f4f4;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
     --content-background-color: #fff;
 }
 
 .darkmode {
-    --background-color: #111;
-    --text-color: #fff;
-    --inversed-text-color: #000;
+    --background-color        : #111;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
     --content-background-color: #000;
 }
 
 .navbar {
     background-color: rgba(255, 0, 0, 0.9);
-    backdrop-filter: blur(4px);
+    backdrop-filter : blur(4px);
 }
 
 .nav-link {
@@ -53,48 +53,48 @@
 }
 
 h1 {
-    font-size: 7rem;
+    font-size  : 7rem;
     font-weight: bold;
-    margin: 0;
+    margin     : 0;
 }
 
 .h3 {
     font-size: 2.75rem;
-    margin: 0;
+    margin   : 0;
 }
 
 .main-content {
-    padding-top: 3rem;
+    padding-top     : 3rem;
     background-color: var(--primary-color);
-    color: var(--inversed-text-color);
-    padding-left: var(--bs-gutter-x,1.5rem);
-    padding-right: var(--bs-gutter-x,1.5rem);
-    padding-bottom: var(--bs-gutter-x,1.5rem);
-    color: white;
+    color           : var(--inversed-text-color);
+    padding-left    : var(--bs-gutter-x, 1.5rem);
+    padding-right   : var(--bs-gutter-x, 1.5rem);
+    padding-bottom  : var(--bs-gutter-x, 1.5rem);
+    color           : white;
 }
 
 .pages-content {
-    padding-left: var(--bs-gutter-x,1rem);
-    padding-right: var(--bs-gutter-x,1rem);
-    background-image: url('/assets/home/cutting-tools.jpg');
-    background-size: cover;
+    padding-left       : var(--bs-gutter-x, 1rem);
+    padding-right      : var(--bs-gutter-x, 1rem);
+    background-image   : url('/assets/home/cutting-tools.jpg');
+    background-size    : cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
 }
 
 .card {
-    text-align: center;
+    text-align      : center;
     background-color: var(--content-background-color);
-    color: var(--text-color);
+    color           : var(--text-color);
 }
 
 .btn-to-page {
-    width: 7.5rem;
+    width    : 7.5rem;
     font-size: large;
 }
 
 img {
-    width: 4rem;
+    width        : 4rem;
     margin-bottom: 1rem;
 }
 
@@ -106,18 +106,22 @@ body {
     margin-top: 0;
 }
 
-.carousel-img-1, .carousel-img-2, .carousel-img-3 {
-    height: 30rem;
+.carousel-img-1,
+.carousel-img-2,
+.carousel-img-3 {
+    height             : 30rem;
     background-position: center;
-    background-size: cover;
+    background-size    : cover;
 }
 
 .carousel-img-1 {
     background-image: url('/assets/home/office.jpeg');
 }
+
 .carousel-img-2 {
     background-image: url('/assets/home/factory.jpg');
 }
+
 .carousel-img-3 {
     background-image: url('/assets/home/machines.jpg');
 }
@@ -147,20 +151,20 @@ body {
 /* Theme Button */
 
 .text {
-    margin: 20px;
-    height: 70px;
-    width: 70px;
+    margin          : 20px;
+    height          : 70px;
+    width           : 70px;
     background-color: var(--text-color);
 }
 
 .content-background {
-    margin: 20px;
+    margin          : 20px;
     background-color: var(--content-background-color);
 }
 
 button {
-    border: none;
-    padding: 10px 10px;
+    border          : none;
+    padding         : 10px 10px;
     background-color: transparent;
-    color: var(--content-background-color);
+    color           : var(--content-background-color);
 }
