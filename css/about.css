@@ -3,6 +3,7 @@
     --text-color              : #000;
     --inversed-text-color     : #fff;
     --content-background-color: #fff;
+    --card-border-color       : #fff;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -11,6 +12,7 @@
         --text-color              : #fff;
         --inversed-text-color     : #000;
         --content-background-color: #000;
+        --card-border-color       : #444;
     }
 }
 
@@ -19,6 +21,7 @@
     --text-color              : #000;
     --inversed-text-color     : #fff;
     --content-background-color: #fff;
+    --card-border-color       : #fff;
 }
 
 .darkmode {
@@ -26,6 +29,7 @@
     --text-color              : #fff;
     --inversed-text-color     : #000;
     --content-background-color: #000;
+    --card-border-color       : #444;
 }
 
 .content {
@@ -47,7 +51,7 @@ h3 {
 
 .card {
     border-width    : 1px;
-    border-color    : white;
+    border-color    : var(--card-border-color);
     background-color: var(--content-background-color);
 }
 

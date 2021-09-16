@@ -5,7 +5,8 @@
     --inversed-text-color     : #fff;
     --content-background-color: #fff;
     --form-color              : #fff;
-    --border                  : none;
+    --border                  : 2px solid white;
+    --card-border-color       : #ddd;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -15,7 +16,8 @@
         --inversed-text-color     : #000;
         --content-background-color: #000;
         --form-color              : #ccc;
-        --border                  : 1px solid white;
+        --border                  : 2px solid white;
+        --card-border-color       : #444;
     }
 }
 
@@ -25,7 +27,8 @@
     --inversed-text-color     : #000;
     --content-background-color: #000;
     --form-color              : #ccc;
-    --border                  : 1px solid white;
+    --border                  : 2px solid white;
+    --card-border-color       : #444;
 }
 
 /* body */
@@ -61,10 +64,39 @@ hr {
 .card {
     background-color: var(--content-background-color);
     border          : var(--border);
+    border-color: var(--card-border-color);
+    transition: linear 200ms;
+    border-radius: 0.35rem;
+}
+
+.card:hover {
+    border: 2px solid #0d6efd;
+    transition: linear 200ms;
 }
 
 .card-body {
     padding-top: 0.5rem;
+    text-align: start;
+}
+
+.a {
+    color: var(--text-color);
+}
+
+.h4 {
+    color: var(--text-color);
+}
+
+.list-group-item {
+    background: var(--card-border-color);
+    color: var(--text-color);
+    transition: linear 200ms;
+}
+
+.card:hover .list-group-item {
+    background-color: #0d6efd;
+    color: white;
+    transition: linear 200ms;
 }
 
 .supplier {
@@ -81,6 +113,10 @@ hr {
     justify-content: flex-start;
     flex-wrap      : nowrap;
     align-items    : flex-start;
+}
+
+.product-pic {
+    border-radius: 3px;
 }
 
 @media only screen and (max-width: 768px) {
