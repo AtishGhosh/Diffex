@@ -79,6 +79,10 @@ hr {
     text-align: start;
 }
 
+.tdk-subtext {
+    color: var(--text-color);
+}
+
 .a {
     color: var(--text-color);
 }
