@@ -126,8 +126,7 @@
             </div>
             <div class="mb-4">
               <label for="email">Email <span class="req">*</span></label>
-              <input type="email" id="email" aria-label="email" class="form-control" placeholder="example@email.com"
-                required>
+              <input type="email" id="email" aria-label="email" class="form-control" placeholder="example@email.com" required>
             </div>
             <div class="mb-4">
               <label for="phone">Phone</label>
@@ -135,13 +134,15 @@
             </div>
             <div class="mb-4">
               <label for="subject">Subject <span class="req">*</span></label>
-              <input type="text" id="subject" aria-label="subject" class="form-control" placeholder="Write a subject"
-                required>
+              <input type="text" id="subject" aria-label="subject" class="form-control" placeholder="Write a subject" required>
             </div>
             <div class="mb-4">
               <label for="message">Message <span class="req">*</span></label>
-              <textarea type="text" id="message" aria-label="message" class="form-control"
-                placeholder="Write your message" rows="4" draggable="false" style="resize: none;" required></textarea>
+              <textarea type="text" id="message" aria-label="message" class="form-control" placeholder="Write your message" rows="4" draggable="false" style="resize: none;" required></textarea>
+            </div>
+            <div class="mb-1">
+              <div class="g-recaptcha" data-sitekey="6Lf40X8cAAAAANV_BSDnpEin3VEOukyYoZh5I5Nj" data-callback="verifyCaptcha" id="reCAPTCHA" role="checkbox" aria-required="true"></div>
+              <span style="color: transparent; font-size: small;" id="reCAPTCHA-error">reCAPTCHA required</span>
             </div>
             <div class="mb-2">
               <button class="btn btn-primary" type="submit" id="submit" onclick="sendEmail()">
@@ -227,6 +228,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script src="/js/theme.js"></script>
 </body>
 

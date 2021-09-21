@@ -1,3 +1,9 @@
+var recaptcha_response = '';
+
+function verifyCaptcha(token) {
+    recaptcha_response = token;
+}
+
 function sendEmail() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -20,12 +26,16 @@ function sendEmail() {
     if ((message === '') || (message == null)) {
         document.getElementById("message").style.borderColor = "red";
     }
+    if(recaptcha_response.length == 0) {
+        document.getElementById("reCAPTCHA-error").style.color = "red";
+    }
 
     if (
         ((name === '') || (name == null)) ||
         ((email === '') || (email == null)) ||
         ((subject === '') || (subject == null)) ||
-        ((message === '') || (message == null))
+        ((message === '') || (message == null)) ||
+        (recaptcha_response.length == 0)
     ) {
         return;
     }
