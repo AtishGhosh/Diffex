@@ -123,6 +123,10 @@ body {
     background-color: gray;
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-color);
+}
+
 a {
     text-decoration: none;
 }
