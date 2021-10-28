@@ -55,11 +55,81 @@ h3 {
 }
 
 .card {
+    background-color: var(--content-background-color);
+    color           : var(--text-color);
     border-width    : 1px;
     border-color    : var(--card-border-color);
-    background-color: var(--content-background-color);
+    margin-bottom   : var(--bs-gutter-x, .75rem);
+}
+
+.card-content {
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+    gap            : 8px;
 }
 
 .content-header {
     margin-bottom: 1rem;
+}
+
+.kgp-equipment {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kgp-equipment-img {
+    display: inline-block;
+    width: 50%;
+}
+
+.kgp-loc-txt {
+    width: 59%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.slate {
+    display        : flex;
+    justify-content: space-between;
+    justify-items  : stretch;
+    flex-wrap      : wrap;
+}
+
+.slate-left {
+    width: 49.5%;
+}
+
+.slate-right {
+    width: 49.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .kgp-equipment {
+        display: block;
+    }
+
+    .kgp-equipment-img {
+        display: block;
+        width: 100%;
+    }
+
+    .kgp-loc-txt {
+        width: 100%;
+        display: block;
+    }
+
+    .kpg-loc-map {
+        width: 100%;
+        display: block;
+    }
+
+    .slate-left {
+        width: 100%;
+    }
+    
+    .slate-right {
+        width: 100%;
+    }
 }
