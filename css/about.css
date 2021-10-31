@@ -53,6 +53,7 @@ h3 {
     border-width    : 1px;
     border-color    : var(--card-border-color);
     background-color: var(--content-background-color);
+    border-radius: 1rem;
 }
 
 h5 {
@@ -72,6 +73,7 @@ h5 {
     margin          : .375rem;
     padding-top     : .75rem;
     padding-bottom  : .75rem;
+    border-radius   : 0.5rem;
 }
 
 .business-card-content {

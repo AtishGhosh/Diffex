@@ -66,7 +66,7 @@ hr {
     border          : var(--border);
     border-color: var(--card-border-color);
     transition: linear 200ms;
-    border-radius: 0.35rem;
+    border-radius: 1rem;
 }
 
 .card:hover {
@@ -97,6 +97,11 @@ hr {
     transition: linear 200ms;
 }
 
+#list-group-item {
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
 .card:hover .list-group-item {
     background-color: #0d6efd;
     color: white;
@@ -120,7 +125,7 @@ hr {
 }
 
 .product-pic {
-    border-radius: 3px;
+    border-top-left-radius: 0.875rem;
 }
 
 @media only screen and (max-width: 768px) {

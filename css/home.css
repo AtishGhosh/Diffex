@@ -86,6 +86,7 @@ h1 {
     text-align      : center;
     background-color: var(--content-background-color);
     color           : var(--text-color);
+    border-radius: 1rem;
 }
 
 .btn-to-page {

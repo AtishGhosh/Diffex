@@ -58,6 +58,7 @@ h3 {
     background-color: var(--content-background-color);
     color           : var(--text-color);
     border-width    : 1px;
+    border-radius: 1rem;
     border-color    : var(--card-border-color);
     margin-bottom   : var(--bs-gutter-x, .75rem);
 }
@@ -103,6 +104,10 @@ h3 {
 
 .slate-right {
     width: 49.5%;
+}
+
+.round-radius {
+    border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {

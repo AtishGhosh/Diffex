@@ -60,6 +60,7 @@
     background-color: var(--content-background-color);
     color           : var(--text-color);
     border-width    : 1px;
+    border-radius: 1rem;
     border-color    : var(--card-border-color);
     margin-bottom   : var(--bs-gutter-x, .75rem);
 }
@@ -106,6 +107,7 @@
 .gmap {
     display: block;
     margin-top: 1rem;
+    border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {

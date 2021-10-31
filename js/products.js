@@ -6,7 +6,7 @@ var ceratizitLink = ["https://cuttingtools.ceratizit.com/gb/en/shop/search/searc
 var ceratizitArrayLength = ceratizitName.length;
 var str = "";
 for (var i = 0; i < ceratizitArrayLength; i++) {
-    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + ceratizitLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + ceratizitImgPath[i] + "\" width=\"35%\"alt=\"" + ceratizitImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + ceratizitName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
+    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + ceratizitLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + ceratizitImgPath[i] + "\" width=\"35%\"alt=\"" + ceratizitImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + ceratizitName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" id=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
 }
 document.getElementById("ceratizit-products-list").innerHTML = str;
 
@@ -18,7 +18,7 @@ var tdkLink = ["/assets/products/TDK-ZR.pdf","/assets/products/TDK-ZRH.pdf","/as
 var tdkArrayLength = tdkName.length;
 str = "";
 for (var i = 0; i < tdkArrayLength; i++) {
-    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + tdkLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + tdkImgPath[i] + "\" width=\"35%\"alt=\"" + tdkImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + tdkName[i] + "</h4><h5 class=\"tdk-subtext\">Impeder Cores</h5></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
+    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + tdkLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + tdkImgPath[i] + "\" width=\"35%\"alt=\"" + tdkImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + tdkName[i] + "</h4><h5 class=\"tdk-subtext\">Impeder Cores</h5></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" id=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
 }
 document.getElementById("tdk-products-list").innerHTML = str;
 
@@ -30,7 +30,7 @@ var totemLink = ["https://www.totem-forbes.com/hss-epm-machine-taps/","https://w
 var totemArrayLength = totemName.length;
 str = "";
 for (var i = 0; i < totemArrayLength; i++) {
-    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + totemLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + totemImgPath[i] + "\" width=\"35%\"alt=\"" + totemImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + totemName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
+    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + totemLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + totemImgPath[i] + "\" width=\"35%\"alt=\"" + totemImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + totemName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" id=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
 }
 document.getElementById("totem-products-list").innerHTML = str;
 
@@ -42,7 +42,7 @@ var jkLink = ["https://jksuperdrive.com/hss-straight-shank-stub-drills","https:/
 var jkArrayLength = jkName.length;
 str = "";
 for (var i = 0; i < jkArrayLength; i++) {
-    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + jkLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + jkImgPath[i] + "\" width=\"35%\"alt=\"" + jkImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + jkName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
+    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + jkLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + jkImgPath[i] + "\" width=\"35%\"alt=\"" + jkImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + jkName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" id=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
 }
 document.getElementById("jk-products-list").innerHTML = str;
 
@@ -54,6 +54,6 @@ var sakLink = ["https://www.sakabrasives.com/products/super-abrasives/","https:/
 var sakArrayLength = sakName.length;
 str = "";
 for (var i = 0; i < sakArrayLength; i++) {
-    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + sakLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + sakImgPath[i] + "\" width=\"35%\"alt=\"" + sakImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + sakName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
+    str += "<div class=\"col-lg-4 col-md-6 mb-4\"><a href=\"" + sakLink[i] + "\" class=\"btn\" style=\"padding: 0; border: 0;\"><div class=\"card\"><div class=\"product\"><img src=\"" + sakImgPath[i] + "\" width=\"35%\"alt=\"" + sakImgAlt[i] + "\" class=\"product-pic\"><div class=\"card-body\"><h4 class=\"a\">" + sakName[i] + "</h4></div></div><ul class=\"list-group list-group-flush\"><li class=\"list-group-item\" id=\"list-group-item\" style=\"padding-top: 0.25rem; padding-bottom: 0.25rem;\"><span>Click to Learn More</span></li></ul></div></a></div>";
 }
 document.getElementById("sak-products-list").innerHTML = str;
