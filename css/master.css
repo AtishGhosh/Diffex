@@ -86,11 +86,6 @@
     color: red;
 }
 
-.container-fluid {
-    padding-left : var(--bs-gutter-x, .75rem);
-    padding-right: var(--bs-gutter-x, .75rem);
-}
-
 .container {
     margin     : 0;
     margin     : auto var(--bs-gutter-x, .75rem);
@@ -164,6 +159,10 @@ a {
 
 .theme-group {
     text-align: center;
+}
+
+#themeModalButton {
+    border-radius: 0.75rem;
 }
 
 @media only screen and (max-width: 992px) {

@@ -5,6 +5,8 @@
     --text-color              : #000;
     --inversed-text-color     : #fff;
     --content-background-color: #fff;
+    --border                  : 2px solid white;
+    --card-border-color       : #ddd;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
         --text-color              : #fff;
         --inversed-text-color     : #000;
         --content-background-color: #000;
+        --border                  : 2px solid white;
+        --card-border-color       : #444;
     }
 }
 
@@ -21,6 +25,8 @@
     --text-color              : #000;
     --inversed-text-color     : #fff;
     --content-background-color: #fff;
+    --border                  : 2px solid white;
+    --card-border-color       : #ddd;
 }
 
 .darkmode {
@@ -28,6 +34,8 @@
     --text-color              : #fff;
     --inversed-text-color     : #000;
     --content-background-color: #000;
+    --border                  : 2px solid white;
+    --card-border-color       : #444;
 }
 
 .navbar {
@@ -52,120 +60,117 @@
     border-color: white;
 }
 
-h1 {
-    font-size  : 7rem;
-    font-weight: bold;
-    margin     : 0;
-}
-
-.h3 {
-    font-size: 2.75rem;
-    margin   : 0;
+body {
+    margin-top: 0;
 }
 
 .main-content {
-    padding-top     : 3rem;
+    padding-top     : var(--bs-gutter-x, 3.5rem);
     background-color: var(--primary-color);
-    color           : var(--inversed-text-color);
     padding-left    : var(--bs-gutter-x, 1.5rem);
     padding-right   : var(--bs-gutter-x, 1.5rem);
-    padding-bottom  : var(--bs-gutter-x, 1.5rem);
+    padding-bottom  : var(--bs-gutter-x, 2rem);
     color           : white;
+    text-align      : center;
+}
+
+.main-title {
+    font-size: 7rem;
+    margin   : 0;
+}
+
+.sub-title {
+    font-size: 3rem;
+    margin   : 0;
 }
 
 .pages-content {
-    padding-left       : var(--bs-gutter-x, 1rem);
-    padding-right      : var(--bs-gutter-x, 1rem);
-    background-image   : url('/assets/home/cutting-tools.jpg');
+    background-image   : url('/assets/home/bar-horizontal.jpg');
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;
 }
 
-.card {
-    text-align      : center;
+.card-btn, .card-carousel {
     background-color: var(--content-background-color);
-    color           : var(--text-color);
-    border-radius: 1rem;
+    border          : var(--border);
+    border-color    : var(--card-border-color);
+    transition      : linear 200ms;
+    border-radius   : 1rem;
+    text-align      : center;
 }
 
-.btn-to-page {
-    width    : 7.5rem;
-    font-size: large;
+.card-btn {
+    display: flex;
+    flex-direction: column;
 }
 
-img {
-    width        : 4rem;
+.card-btn:hover {
+    border    : 2px solid #0d6efd;
+    transition: linear 200ms;
+}
+
+.card-body {
+    padding-top: 0.5rem;
+    text-align : start;
+    text-align : center;
+}
+
+.card-body-content {
+    color        : var(--text-color);
+    display      : inline-block;
+    margin-top   : 0.5rem;
     margin-bottom: 1rem;
 }
 
-.carousel {
-    margin-top: 1rem;
+.card-btn:hover .list-group-item {
+    background-color: #0d6efd;
+    color           : white;
+    transition      : linear 200ms;
 }
 
-body {
-    margin-top: 0;
+.bar-link,
+.card-text {
+    color     : var(--text-color);
+    transition: linear 200ms;
 }
 
-.carousel-img-1,
-.carousel-img-2,
-.carousel-img-3 {
-    height             : 30rem;
-    background-position: center;
-    background-size    : cover;
+.card-text {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
 }
 
-.carousel-img-1 {
-    background-image: url('/assets/home/office.jpeg');
+.bar-link {
+    border : 0;
+    padding: 0;
 }
 
-.carousel-img-2 {
-    background-image: url('/assets/home/factory.jpeg');
+.list-group-item {
+    padding-top     : 0.25rem;
+    padding-bottom  : 0.25rem;
+    background-color: var(--card-border-color);
+    transition      : linear 200ms;
+    color           : var(--text-color);
 }
 
-.carousel-img-3 {
-    background-image: url('/assets/home/machines.jpg');
+.list-group-item:hover {
+    transition: linear 200ms;
+
 }
 
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    .main-content {
-        padding-top: 4rem;
-    }
-
-    .pages-content {
-        padding-left: 0;
-    }
-
-    .carousel-img-3 {
-        background-image: url('/assets/home/machines-narrow.jpg');
-    }
+#list-group-item-border {
+    border-bottom-left-radius : 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    transition                : linear 200ms;
 }
 
-/* Theme Button */
-
-.text {
-    margin          : 20px;
-    height          : 70px;
-    width           : 70px;
-    background-color: var(--text-color);
+.top-round-corner {
+    border-top-left-radius : 1rem;
+    border-top-right-radius: 1rem;
 }
 
-.content-background {
-    margin          : 20px;
-    background-color: var(--content-background-color);
-}
-
-button {
-    border          : none;
-    padding         : 10px 10px;
-    background-color: transparent;
-    color           : var(--content-background-color);
+.top-tight-round-corner {
+    border-top-left-radius: 0.875rem;
+    border-top-right-radius: 0.875rem;
 }

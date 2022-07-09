@@ -1,3 +1,6 @@
+// Navbar
+document.getElementById('productsNav').classList.add('current-page');
+
 // Ceratizit
 var ceratizitImgPath = ["/assets/products/Ceratizit-Boring.jpg","/assets/products/Ceratizit-Clamping.jpg","/assets/products/Ceratizit-Milling.jpg","/assets/products/Ceratizit-Threading.jpg","/assets/products/Ceratizit-Tool-Holder.jpg","/assets/products/Ceratizit-Turning.jpg"];
 var ceratizitImgAlt = ["img-Ceratizit-Boring","img-Ceratizit-Clamping","img-Ceratizit-Milling","img-Ceratizit-Threading","img-Ceratizit-Tool-Holder","img-Ceratizit-Turning"];

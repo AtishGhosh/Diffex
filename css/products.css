@@ -64,19 +64,19 @@ hr {
 .card {
     background-color: var(--content-background-color);
     border          : var(--border);
-    border-color: var(--card-border-color);
-    transition: linear 200ms;
-    border-radius: 1rem;
+    border-color    : var(--card-border-color);
+    transition      : linear 200ms;
+    border-radius   : 1rem;
 }
 
 .card:hover {
-    border: 2px solid #0d6efd;
+    border    : 2px solid #0d6efd;
     transition: linear 200ms;
 }
 
 .card-body {
     padding-top: 0.5rem;
-    text-align: start;
+    text-align : start;
 }
 
 .tdk-subtext {
@@ -93,19 +93,19 @@ hr {
 
 .list-group-item {
     background: var(--card-border-color);
-    color: var(--text-color);
+    color     : var(--text-color);
     transition: linear 200ms;
 }
 
 #list-group-item {
     border-bottom-right-radius: 0.8rem;
-    border-bottom-left-radius: 0.8rem;
+    border-bottom-left-radius : 0.8rem;
 }
 
 .card:hover .list-group-item {
     background-color: #0d6efd;
-    color: white;
-    transition: linear 200ms;
+    color           : white;
+    transition      : linear 200ms;
 }
 
 .supplier {
@@ -126,6 +126,10 @@ hr {
 
 .product-pic {
     border-top-left-radius: 0.875rem;
+}
+
+.show-products-btn {
+    border-radius: 0.75rem;
 }
 
 @media only screen and (max-width: 768px) {
