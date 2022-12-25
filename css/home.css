@@ -120,7 +120,13 @@ body {
     color        : var(--text-color);
     display      : inline-block;
     margin-top   : 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.office-image-home, .factory-image-home {
+    max-width: 28rem;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
 }
 
 .card-btn:hover .list-group-item {

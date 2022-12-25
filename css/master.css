@@ -215,5 +215,6 @@ a {
     .bottombar-info {
         width     : 100%;
         text-align: end;
+        margin-top: 1rem;
     }
 }
