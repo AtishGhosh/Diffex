@@ -85,6 +85,7 @@ hr {
 
 .a {
     color: var(--text-color);
+    max-width: 13.75rem;
 }
 
 .h4 {

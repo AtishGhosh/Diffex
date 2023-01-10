@@ -4,14 +4,14 @@ var navbarElement3 = '</ul></ul></div></div></div></nav>';
 
 var titleNavElement = '<a class=\"navbar-brand btn-danger\" id=\"titleNav\" href=\"/\">DIFFEX</a>';
 
-var factoryNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"factoryNav\" href=\"/factory\">Factory</a></li>';
+var homeNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"homeNav\" href=\"/\">Home</a></li>';
 var productsNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"productsNav\" href=\"/products\">Products</a></li>';
 var clientsNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"clientsNav\" href=\"/clients\">Clients</a></li>';
 var aboutNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"aboutNav\" href=\"/about\">About</a></li>';
 var contactNavElement = '<li class=\"nav-item\"><a class=\"nav-link nav-link-contact\" id=\"contactNav\" href=\"/contact\">Contact</a></li>';
 
-navbarLinks = factoryNavElement + productsNavElement + clientsNavElement + aboutNavElement + contactNavElement;
+navbarLinks = homeNavElement + productsNavElement + clientsNavElement + aboutNavElement + contactNavElement;
 
-fullNavbarElement = navbarElement1 + titleNavElement + navbarElement2 + navbarLinks + navbarElement3;
+var fullNavbarElement = navbarElement1 + titleNavElement + navbarElement2 + navbarLinks + navbarElement3;
 
 document.getElementById("navbar").innerHTML = fullNavbarElement;
