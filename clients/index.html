@@ -24,6 +24,7 @@
   <script defer src="/js/navbar.js"></script>
   <script defer src="/js/clients.js"></script>
   <script defer src="/js/themeModal.js"></script>
+  <script defer src="/js/bottombar.js"></script>
 </head>
 
 <body class="default">
@@ -69,28 +70,7 @@
   </div>
 
   <!-- Bottombar -->
-  <div class="bottombar-content">
-    <div class="bottombar-brand">
-      <div style="margin-right: 0.8rem;">
-        <a class="navbar-brand btn-danger" style="display: inline-block;" href="/">DIFFEX</a>
-      </div>
-      <div>
-        <div style="font-size: 1.4rem;">
-          Different Experience <span style="white-space: nowrap;">Enterprises &trade;</span>
-        </div>
-        <div style="font-size: 0.8rem;">
-          &copy; Copyright 2021
-        </div>
-      </div>
-    </div>
-    <div class="bottombar-info">
-      Designed and built by <a href="https://github.com/AtishGhosh">Atish Ghosh</a>. Open-source code project on <a
-        href="https://github.com/AtishGhosh/Diffex">GitHub</a>. To learn more about the Diffex team, visit our <a
-        href="/about">About page</a>. To place an order, report a problem, or ask a query, <a href="/contact">contact
-        us</a>.<br><button class="btn btn-outline-primary btn-sm" style="margin-top: 0.5rem;" data-bs-toggle="modal"
-        data-bs-target="#themeModal" id="themeModalButton">Change appearance</button>
-    </div>
-  </div>
+  <div id="bottombar"></div>
 
   <!-- Theme Modal -->
   <div id="themeModalHTML"></div>

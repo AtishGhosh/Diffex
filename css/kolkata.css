@@ -1,0 +1,49 @@
+.default, .lightmode {
+    --background-color        : #f0f0f0;
+    --text-color              : #000;
+    --inversed-text-color     : #fff;
+    --content-background-color: #fff;
+    --card-border-color       : #fff;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    .default {
+        --background-color        : #141414;
+        --text-color              : #fff;
+        --inversed-text-color     : #000;
+        --content-background-color: #000;
+        --card-border-color       : #444;
+    }
+}
+
+.darkmode {
+    --background-color        : #141414;
+    --text-color              : #fff;
+    --inversed-text-color     : #000;
+    --content-background-color: #000;
+    --card-border-color       : #444;
+}
+
+.kol-logo {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: default;
+}
+
+.kol-logo:hover {
+    cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+    .kol-logo {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .kol-logo {
+        display: none;
+    }
+}

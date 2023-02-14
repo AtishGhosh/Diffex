@@ -78,6 +78,10 @@
     border-color: #7f7f7f;
 }
 
+.nav-link-home {
+    margin-top: 0;
+}
+
 .nav-link-contact {
     margin-bottom: 0;
 }
@@ -152,6 +156,7 @@ a {
     background-color: var(--modal-color);
     border-width    : 1px;
     border-color    : white;
+    border-radius: 1rem;
 }
 
 .close-modal {
@@ -192,6 +197,10 @@ a {
     .nav-link {
         text-align  : end;
         margin-right: 1rem;
+    }
+
+    .nav-link-home {
+        margin-top: 0.75rem;
     }
 
     .nav-link-contact {

@@ -36,9 +36,16 @@
     cursor: default;
 }
 
-.lol {
-    display: flex;
-    align-items: center;
+.kgp-logo-small {
+    display: none;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: default;
+}
+
+.kgp-logo-small:hover {
+    cursor: default;
 }
 
 .content {
@@ -80,6 +87,12 @@ h3 {
     justify-content: space-between;
 }
 
+.kgp-equipment-txt {
+    display: inline-block;
+    padding-right: 2rem;
+    width: 50%;
+}
+
 .kgp-equipment-img {
     display: inline-block;
     width: 50%;
@@ -111,8 +124,18 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+    .kgp-logo {
+        padding: 0;
+    }
+
     .kgp-equipment {
         display: block;
+    }
+
+    .kgp-equipment-txt {
+        padding: none;
+        display: block;
+        width: 100%;
     }
 
     .kgp-equipment-img {
@@ -136,5 +159,15 @@ h3 {
     
     .slate-right {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .kgp-logo {
+        display: none;
+    }
+
+    .kgp-logo-small {
+        display: inline-block;
     }
 }
