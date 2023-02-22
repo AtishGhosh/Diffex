@@ -36,6 +36,70 @@
     cursor: default;
 }
 
+.kol-logo-small {
+    display: none;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: default;
+}
+
+.content {
+    padding-left : var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+}
+
+.content-header {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--content-background-color);
+    color           : var(--text-color);
+    border-width    : 1px;
+    border-radius: 1rem;
+    border-color    : var(--card-border-color);
+    margin-bottom   : var(--bs-gutter-x, .75rem);
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.slate {
+    display        : flex;
+    justify-content: space-between;
+    justify-items  : stretch;
+    flex-wrap      : wrap;
+}
+
+.slate-left {
+    width: 49.5%;
+}
+
+.slate-right {
+    width: 49.5%;
+}
+
+.card-content {
+    display        : flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap      : wrap;
+    gap            : 8px;
+}
+
+.open-hours {
+    display   : inline-block;
+    text-align: end;
+    align-self: flex-end;
+    justify-self: right;
+}
+
 @media only screen and (max-width: 768px) {
     .kol-logo {
         padding: 0;
@@ -45,5 +109,9 @@
 @media only screen and (max-width: 420px) {
     .kol-logo {
         display: none;
+    }
+
+    .kol-logo-small {
+        display: inline-block;
     }
 }

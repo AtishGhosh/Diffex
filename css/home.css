@@ -130,7 +130,7 @@ body {
 }
 
 .office-image-home, .factory-image-home {
-    max-width: 28rem;
+    max-width: 20rem;
     aspect-ratio: 16/9;
     border-radius: 0.5rem;
     margin: 0 1rem;
