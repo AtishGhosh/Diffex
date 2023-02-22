@@ -2,7 +2,7 @@ var navbarElement1 = '<nav class=\"navbar navbar-expand-md fixed-top\"><div clas
 var navbarElement2 = '<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div class=\"collapse navbar-collapse\" id=\"navbarNav\"><ul class=\"navbar-nav ms-auto\">';
 var navbarElement3 = '</ul></ul></div></div></div></nav>';
 
-var titleNavElement = '<a class=\"navbar-brand btn-danger\" id=\"titleNav\" href=\"/\">DIFFEX</a><span class=\"kgp-logo\">KHARAGPUR</span><span class=\"kgp-logo-small\">KGP</span>';
+var titleNavElement = '<a class=\"navbar-brand btn-danger\" id=\"titleNav\" href=\"/\">DIFFEX</a><span class=\"kgp-logo me-auto\">KHARAGPUR</span><span class=\"kgp-logo-small me-auto\">KGP</span>';
 
 var homeNavElement = '<li class=\"nav-item\"><a class=\"nav-link nav-link-home\" id=\"homeNav\" href=\"/\">Home</a></li>';
 var productsNavElement = '<li class=\"nav-item\"><a class=\"nav-link\" id=\"productsNav\" href=\"/products\">Products</a></li>';

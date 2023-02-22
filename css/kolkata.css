@@ -101,8 +101,21 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+    .content {
+        padding-top: 1rem;
+    }
+
     .kol-logo {
         padding: 0;
+        margin-left: 1rem;
+    }
+
+    .slate-left {
+        width: 100%;
+    }
+    
+    .slate-right {
+        width: 100%;
     }
 }
 
@@ -113,5 +126,6 @@ h3 {
 
     .kol-logo-small {
         display: inline-block;
+        margin-left: 1rem;
     }
 }
