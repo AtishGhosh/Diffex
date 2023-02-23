@@ -70,3 +70,9 @@ h1 {
 .client-img {
     margin: 1.5rem 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding-top: 1rem;
+    }
+}

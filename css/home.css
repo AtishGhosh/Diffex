@@ -204,6 +204,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .content {
+        padding-top: 1rem;
+    }
+    
     .main-title {
         font-size: 4rem;
         text-align: start;
