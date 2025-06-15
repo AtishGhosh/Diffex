@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/css/404.css">
   <!-- JavaScript -->
   <script defer src="/js/theme.js"></script>
+  <script defer src="/js/bottombar.js"></script>
 </head>
 
 <body class="default">
@@ -28,6 +29,36 @@
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand btn-danger" href="/">DIFFEX</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/clients">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-contact" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -44,6 +75,11 @@
     <a href="/" class="btn btn-primary">Let's go Home</a><a href="/contact" class="btn btn-danger">Report problem</a>
   </div>
 
+  <!-- Bottombar -->
+  <div id="bottombar"></div>
+
+  <!-- Theme Modal -->
+  <div id="themeModalHTML"></div>
 </body>
 
 </html>

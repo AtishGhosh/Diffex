@@ -1,188 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diffex</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/master.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <!-- JavaScript -->
+    <script defer src="/js/theme.js"></script>
+    <script defer src="/js/bottombar.js"></script>
+  </head>
+  <body class="default">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand btn-danger" href="/">DIFFEX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/clients">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-contact" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diffex</title>
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="/css/master.css">
-  <link rel="stylesheet" href="/css/home.css">
-  <!-- JavaScript -->
-  <script defer src="/js/theme.js"></script>
-  <script defer src="/js/bottombar.js"></script>
-</head>
+    <div class="cover">
+      <div class="cover-text">
+        Empowering your factory with precision tools
+        <br class="text-break" />and high-quality manufacturing solutions.
+      </div>
+      <img
+        src="/assets/home/xolx-cutter.png"
+        class="milling-cutter overflow-hidden"
+        alt=""
+      />
+    </div>
 
-<body class="default">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand btn-danger" href="/">DIFFEX</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/clients">Clients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-contact" href="/contact">Contact</a>
-          </li>
-        </ul>
+    <div class="dealership-section">
+      <div class="card" style="border-radius: 2rem">
+        <div class="row">
+          <div id="dealership-image" class="col-xl-5" style="padding: 0">
+            <div id="dealership-text">Dealership</div>
+          </div>
+          <div class="col-xl-7">
+            <div class="card-body pb-4">
+              <h4 class="card-title mt-2 mb-3">Office in Kolkata</h4>
+              <p class="card-text">
+                We offer a wide range of high-quality cutting tools and wear
+                parts from leading brands like Ceratizit, TDK, and 3M, catering
+                to diverse industrial applications. Our strong partnerships with
+                industry leaders reflect our commitment to delivering reliable
+                solutions to our customers.
+              </p>
+              <a href="/office/" class="card-link">Learn More</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <div class="main-content">
-    <h1 class="main-title">Welcome</h1>
-    <h3 class="sub-title">to <strong> Different Experience Enterprises</strong></h3>
-  </div>
-  <div class="pages-content">
-    <div id="front-drop" class="p-1">
-      <div class="row">
-        <div class="btn col-md bar-link p-1 cursor-default">
-            <a href="/office/" class="card-btn" style="height: 100%;">
-              <div class="card-body">
-                <div class="card-body-content">
-                    <div class="office-image-home bw-filter">
-                        <img src="/assets/home/office.jpeg" alt="img-diffex-office" width="100%" style="border-radius: 0.5rem">
-                    </div>
-                </div>
-                <p class="card-text">Learn more about our office in <strong>Kolkata</strong>. We strive to provide quality cutting tools for resonable prices.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="list-group-item-border">
-                  <span style="font-size: 1.2rem;">Office</span>
-                </li>
-              </ul>
-            </a>
-        </div>
-        <div class="btn col-md bar-link p-1 cursor-default">
-          <a href="/factory/" class="card-btn" style="height: 100%;">
-            <div class="card-body">
-              <div class="card-body-content">
-                <div class="factory-image-home bw-filter">
-                    <img src="/assets/home/factory.jpg" alt="img-diffex-factory" width="100%" style="border-radius: 0.5rem">
-                </div>
-              </div>
-              <p class="card-text">Learn more about our new factory in <strong>Kharagpur</strong>. Our goal here is to establish a strong footprint in the CNC machining industry.</p>
+    <div class="factory-section">
+      <div class="card" style="border-radius: 2rem">
+        <div class="row" style="margin: 0; padding: 0">
+          <div id="factory-image" class="col-xl-5" style="padding: 0">
+            <div id="factory-text">Factory</div>
+          </div>
+          <div class="col-xl-7">
+            <div class="card-body pb-4">
+              <h4 class="card-title mt-2 mb-3">Plant in Kharagpur</h4>
+              <p class="card-text">
+                Our Kharagpur factory is equipped with advanced CNC milling and
+                lathe machines, allowing us to manufacture high-precision steel
+                and aluminum components. With a commitment to quality, we
+                deliver exceptional products and services, tailored to meet the
+                needs of our customers.
+              </p>
+              <a href="/factory/" class="card-link">Learn More</a>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="list-group-item-border">
-                <span style="font-size: 1.2rem;">Factory</span>
-              </li>
-            </ul>
-          </a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="btn bar-link col-md p-1 cursor-default">
-          <a href="/products/" class="card-btn">
-            <div class="card-body">
-              <div class="card-body-content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                  class="bi bi-box-seam" viewBox="0 0 16 16">
-                  <path
-                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
-                </svg>
-              </div>
-              <p class="card-text">We offer top-line products that use the lastest generation cutting edge technologies to give you a competitive edge.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="list-group-item-border">
-                <span style="font-size: 1.2rem;">Products</span>
-              </li>
-            </ul>
-          </a>
+    </div>
+    <div class="products-section">
+      <div class="card" style="border-radius: 2rem">
+        <div class="card-body px-4">
+          <h4 class="card-title mt-2 mb-3">Products</h4>
+          <p class="card-text">
+            Our Kharagpur factory is equipped with advanced CNC milling and
+            lathe machines, allowing us to manufacture high-precision steel and
+            aluminum components. With a commitment to quality, we deliver
+            exceptional products and services, tailored to meet the needs of our
+            customers.
+          </p>
         </div>
-        <div class="btn col-md bar-link p-1 cursor-default">
-          <a href="/clients/" class="card-btn" style="height: 100%;">
-            <div class="card-body">
-              <div class="card-body-content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-award"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                </svg>
+        <hr />
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-6 col-xl-3 pb-3 product-company-card">
+              <div class="card p-0 product-card">
+                <div
+                  class="card-body"
+                  style="min-height: 10rem; align-content: center"
+                >
+                  <img
+                    src="/assets/products/Ceratizit.png"
+                    alt="Ceratizit-logo"
+                    width="100%"
+                    id="ceratizit-logo"
+                  />
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Boring Operations</li>
+                  <li class="list-group-item">Milling Operations</li>
+                  <li class="list-group-item">Threading Operations</li>
+                  <li class="list-group-item">Tool Holders</li>
+                  <li class="list-group-item">Turning Operations</li>
+                </ul>
+                <div class="card-body">
+                  <a href="/products/#Ceratizit" class="card-link">Show all</a>
+                </div>
               </div>
-              <p class="card-text">Customer partnerships are vital to our quality service. Here is a list of brands we have provided our services to.</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="list-group-item-border">
-                <span style="font-size: 1.2rem;">Clients</span>
-              </li>
-            </ul>
-          </a>
-        </div>
-        <div class="btn col-md bar-link p-1 cursor-default">
-          <a href="/about/" class="card-btn" style="height: 100%;">
-            <div class="card-body">
-              <div class="card-body-content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                  class="bi bi-info-circle" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                  <path
-                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
+            <div class="col-sm-6 col-xl-3 pb-3 product-company-card">
+              <div class="card p-0 product-card">
+                <div
+                  class="card-body"
+                  style="min-height: 10rem; align-content: center"
+                >
+                  <img
+                    src="/assets/products/Wohlhaupter.png"
+                    alt="Wohlhaupter-logo"
+                    width="100%"
+                    id="wohlhaupter-logo"
+                  />
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Drilling</li>
+                  <li class="list-group-item">Boring</li>
+                  <li class="list-group-item">Specials</li>
+                  <li class="list-group-item">Threading</li>
+                  <li class="list-group-item">Porting</li>
+                </ul>
+                <div class="card-body">
+                  <a href="/products/#Wohlhaupter" class="card-link"
+                    >Show all</a
+                  >
+                </div>
               </div>
-              <p class="card-text">We pride ourselves on delivering best products for our customers. Know more about the team behind our operations.</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="list-group-item-border">
-                <span style="font-size: 1.2rem;">About</span>
-              </li>
-            </ul>
-          </a>
-        </div>
-        <div class="btn col-md bar-link p-1 cursor-default">
-          <a href="/contact/" class="card-btn" style="height: 100%;">
-            <div class="card-body">
-              <div class="card-body-content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
-                  class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
-                </svg>
+            <div class="col-sm-6 col-xl-3 pb-3 product-company-card">
+              <div class="card p-0 product-card">
+                <div
+                  class="card-body"
+                  style="min-height: 10rem; align-content: center"
+                >
+                  <img
+                    src="/assets/products/TDK.png"
+                    alt="TDK-logo"
+                    width="100%"
+                    id="tdk-logo"
+                  />
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">ZR series cores</li>
+                  <li class="list-group-item">ZRH series cores</li>
+                  <li class="list-group-item">ZRS series cores</li>
+                  <li class="list-group-item">ZRSH series cores</li>
+                  <li class="list-group-item">ZRSH squared cores</li>
+                </ul>
+                <div class="card-body">
+                  <a href="/products/#TDK" class="card-link">Show all</a>
+                </div>
               </div>
-              <p class="card-text">Your plant efficiency is just a phone call away. Click the button below to learn more on how to get in touch with us.</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="list-group-item-border">
-                <span style="font-size: 1.2rem;">Contact</span>
-              </li>
-            </ul>
-          </a>
+            <div class="col-sm-6 col-xl-3 pb-3 product-company-card">
+              <div class="card p-0 product-card">
+                <div
+                  class="card-body"
+                  style="min-height: 10rem; align-content: center"
+                >
+                  <img
+                    src="/assets/products/3M.png"
+                    alt="3M-logo"
+                    width="100%"
+                    id="three-m-logo"
+                  />
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Abrasive Wheels</li>
+                  <li class="list-group-item">Abrasive Discs</li>
+                  <li class="list-group-item">Sanding Screens</li>
+                  <li class="list-group-item">Abrasive Brushes</li>
+                  <li class="list-group-item">Specialty Abrasives</li>
+                </ul>
+                <div class="card-body">
+                  <a href="/products/#3M" class="card-link">Show all</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-  </div>
+    </div>
+    <div class="about-section">
+      <div class="card" style="border-radius: 2rem">
+        <div class="row" style="margin: 0; padding: 0">
+          <!-- <div id="about-image" class="col-xl-5" style="padding: 0">
+            <div id="about-text">Team</div>
+          </div> -->
+          <div class="col-xl-12">
+            <div class="card-body pb-4">
+              <h4 class="card-title mt-2 mb-3">About our firm</h4>
+              <p class="card-text">
+                Since 2005, we have proudly served Eastern India's industrial
+                sector, providing high-quality cutting tools and precision
+                manufacturing solutions. With a focus on quality, strong
+                partnerships, and customer satisfaction, we continue to expand
+                our offerings and deliver exceptional service to businesses of
+                all sizes.
+              </p>
+              <a href="/about/" class="card-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Bottombar -->
-  <div id="bottombar"></div>
+    <div class="p-4"></div>
 
-  <!-- Theme Modal -->
-  <div id="themeModalHTML"></div>
+    <!-- Bottombar -->
+    <div id="bottombar"></div>
 
-</body>
-
+    <!-- Theme Modal -->
+    <div id="themeModalHTML"></div>
+  </body>
 </html>
